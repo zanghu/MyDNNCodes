@@ -1,0 +1,12 @@
+本文件夹内的是最近半年编写的模型中，整理出的比较有代表性的几个
+
+其中包括:
+    RSM(Replicated Softmax RMB)
+    Gaussian-Binary RBM
+    Conv-RBM, 按照Honglak Lee ICML2009的Paper做的实现，主要特点是实现了概率max-pooling
+    AutoEncoders & Denoised AE
+    Correspondence AE (自己设计的一种针对双模态数据的双通道AE模型）
+    Conv-Corre-AE (加入前馈卷积网络的Corre-AE，性能目前正在测试中)
+    
+以上所有模型均以LISA-Lab的Pylearn2框架实现为主，目的在于便于实现GPU加速；
+部分模型有纯numpy版本代码，主要用于某些情况下的对比实验和debug.
